@@ -1,9 +1,9 @@
-input_data=[
-'1abc2',
-'pqr3stu8vwx',
-'a1b2c3d4e5f',
-'treb7uchet'
-]
+import os
+dirname = os.path.dirname(__file__)
+
+with open(dirname + "/input.txt") as f:
+    lines =  f.readlines()
+    input_data = [i for i in lines]
 
 def problem_1(input_data):
     total_sum = 0
